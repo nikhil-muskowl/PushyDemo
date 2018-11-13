@@ -1,5 +1,7 @@
 {
   "name": "PushyDemo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
