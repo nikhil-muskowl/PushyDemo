@@ -18,6 +18,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+
       document.addEventListener('deviceready', function () {
         // Start the Pushy service
         Pushy.listen();
@@ -42,10 +43,10 @@ export class MyApp {
       Pushy.setNotificationListener(function (data) {
         // Print notification payload data
         console.log('Received notification: ' + JSON.stringify(data));
-    
+
         // Display an alert with the "message" payload value
         console.log(data.message);
-    });
+      });
     });
   }
 }
